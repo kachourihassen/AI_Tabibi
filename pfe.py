@@ -53,7 +53,7 @@ except Exception as e:
     nltk.download('averaged_perceptron_tagger')
 
 
-dataset = 'C:/Users/Kachouri/Desktop/Patient/Data/New Data folder/Data.xlsx'
+dataset = 'C:/Users/Kachouri/Desktop/AI/Patient/Data/New Data folder/Data.xlsx' 
 df=pd.read_excel(dataset)
 
 def remove_emoji(string):
@@ -195,4 +195,5 @@ def predict_ai():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='192.168.0.6')
+    #app.run(debug=True)

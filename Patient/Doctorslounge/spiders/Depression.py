@@ -37,7 +37,7 @@ class MedSpider(scrapy.Spider):
     caps['acceptSslCerts'] = True
     
     writer = csv.writer(open("C:/Users/Kachouri/Desktop/Patient/Data/Depression_question.csv", 'w'))
-    driver= webdriver.Chrome(desired_capabilities=caps,options=options,executable_path="C:/Users/Kachouri/Desktop/Patient/chromedriver_win32/chromedriver.exe")
+    driver= webdriver.Chrome(desired_capabilities=caps,options=options,executable_path="C:/Users/Kachouri/Desktop/AI/Patient/chromedriver_win32/chromedriver.exe")
     with open('C:/Users/Kachouri/Desktop/Patient/Depression_url.csv') as fp:
         reader = csv.reader(fp, delimiter=",", quotechar='"')
         for row in reader:
